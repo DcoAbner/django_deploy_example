@@ -1,0 +1,11 @@
+{% extends "basic_app/base_generic.html" %}
+
+{% block content %}
+
+    <div class="jumbotron">
+        {% if user %}
+        <h1>{{ user.username }}</h1>
+        {% endif %}
+    </div>
+
+{% endblock %}
